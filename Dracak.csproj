@@ -57,6 +57,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FightMessage.cs" />
     <Compile Include="Fight\Attacks\ArmorBreak.cs" />
     <Compile Include="Fight\Attacks\Attack.cs" />
     <Compile Include="Fight\Attacks\Bash.cs" />
@@ -96,7 +97,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fight\Entity\Player.cs" />
+    <Compile Include="MapMessage.cs" />
     <Compile Include="Map\Collider.cs" />
+    <Compile Include="Map\Enemy.cs" />
     <Compile Include="Map\GameObject.cs" />
     <Compile Include="Map\Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
@@ -104,6 +107,8 @@
     <Compile Include="Fight\Menu\Menu.cs" />
     <Compile Include="Fight\Menu\MenuItem.cs" />
     <Compile Include="Map\MapVM.cs" />
+    <Compile Include="IMessage.cs" />
+    <Compile Include="MsgQueue.cs" />
     <Compile Include="Map\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

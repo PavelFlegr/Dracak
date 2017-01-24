@@ -33,7 +33,10 @@ namespace Dracak.Map
 
         public override void OnCollision(GameObject gameObject)
         {
-           
-         }
+           if(gameObject is Enemy)
+            {
+                MsgQueue.Messages.Enqueue(new FightMessage());
+            }
+        }
     }
 }

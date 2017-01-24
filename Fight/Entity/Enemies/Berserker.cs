@@ -8,10 +8,13 @@ namespace Dracak.Fight
 {
     class Berserker : Enemy
     {
-        public override string Name { get
+        public override string Name
+        {
+            get
             {
                 return "Berserker";
-            } }
+            }
+        }
         public override void Attack(IEntity target)
         {
             target.DoDamage(Damage);

@@ -16,7 +16,8 @@ namespace Dracak.Map
             get
             {
                 return AppDomain.CurrentDomain.BaseDirectory;
-            } }
+            }
+        }
         public void HandleKeyPress(Key key)
         {
             
@@ -27,7 +28,7 @@ namespace Dracak.Map
             GameObject temp = new Player { Sprite = "/square.png" };
             temp.Collider = new Collider(50, 50, temp);
             GameObjects.Add(temp);
-            temp = new GameObject { Sprite = "/square.png", X = 100, Y = 100 };
+            temp = new Enemy { Sprite = "/square.png", X = 100, Y = 100 };
             temp.Collider = new Collider(50, 50, temp);
             GameObjects.Add(temp);
         }
